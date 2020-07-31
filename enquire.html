@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Demonstrating website on HTML and CSS. This website is based on car hiring.">
+  <meta name="keywords" content="HTML5, css">
+  <meta name="author" content="Sahib singh">
+  <title>Enquiry page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/enquire.css">
+   <script src="scripts/enhancements.js"></script> 
+  <script src="scripts/enquire.js"></script>
+
+
+  <link rel="icon" href="images/favicon.ico">
+<!--for icons in footer -->
+  <script src="https://kit.fontawesome.com/09e0f9fcdf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img class="logo" src="images/navlogo.svg" alt="car logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="product.html">PRODUCT</a></li>
+          <li><a href="#">ENQUIRY</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+         
+          <li><a href="enhancement.html">ENHANCEMENTS</a></li>
+          <li><a href="enhancements2.html">Enhancements2</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+  <form action="payment.html" method="POST" id="enqForm">
+    <div class="enquires">
+      <fieldset>
+        <legend><span class="no"></span>Your Info</legend>
+        <hr>
+        <label class="firstName" for="firstName">First Name:</label>
+        <input name="firstName" type="text" required id="firstName" pattern="[A-Za-z]{1,25}">
+        <br>
+        <hr>
+        <label class="lastname" for="lastName">Last Name:</label>
+        <input name="lastName" type="text" required id="lastName" pattern="[A-Za-z]{1,25}">
+        <br>
+        <hr>
+        <label class="num">Email address:</label>
+        <input class="emails" type="email" id="email_name" name="email" required>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend><span id="lineedit" class="no"></span>Your Address</legend>
+        <hr>
+        <label class="street" for="streetAddress">Street Address:</label>
+        <input type="text" id="streetAddress" required name="streetAddress" pattern="[A-Za-z \d]{1,40}">
+        <br>
+        <hr>
+        <label class="suburb" for="suburbTown">Suburb/Town</label>
+        <input type="text" required id="suburbTown" pattern="[A-Za-z]{1,20}">
+        <br>
+        <hr>
+        <label class="state" for="state">State:</label>
+        <select name="state" id="state">
+          <option value="VIC" selected>VIC</option>
+          <option value="NSW">NSW</option>
+          <option value="QLD">QLD</option>
+          <option value="NT">NT</option>
+          <option value="WA">WA</option>
+          <option value="SA">SA</option>
+          <option value="TAS">TAS</option>
+          <option value="ACT">ACT</option>
+        </select>
+
+        <br>
+        <hr>
+        <label class="post" for="postcode">Postcode</label>
+        <input type="text" required name="postcode" id="postcode" pattern="[\d]{4}">
+        <br>
+      </fieldset>
+     
+      <fieldset>
+        <legend><span class="no"></span>Your Contact</legend>
+        <label class="phone" for="phoneNumber">Phone Number</label>
+        <input type="text" name="phoneNumber" required id="phoneNumber" pattern="[\d]{10}" placeholder="0481772377">
+        <br>
+        <hr>
+        <label class="prefer">Preferred Contact</label>
+        <br>
+
+        <label id="prefer" for="email" class="containers">Email
+
+          <input type="radio" id="email" name="radio" value="Email" checked="checked">
+          <span class="complete"></span>
+        </label>
+        <br>
+        <label class="containers" for="post">Post
+          <input type="radio" id="post" name="radio" value="Post">
+          <span class="complete"></span>
+        </label>
+        <br>
+        <label class="containers" for="phone">Phone
+          <input type="radio" id="phone" name="radio" value="Phone">
+          <span class="complete"></span>
+        </label>
+
+
+        <br>
+      </fieldset>
+      <fieldset>
+
+
+        <legend><span class="no"></span>The Product</legend>
+        <hr>
+        <h4>Prices</h4>
+        <label>Small- 30$ </label>
+        <label>Economy- 40$</label>
+
+        <label>Suv- 60$</label>
+
+        <label>Premium- 100</label>
+
+
+        <hr>
+
+        <label for="productType" class="productTypes">Choose your desirable car:</label>
+        <br>
+        <select name="productType" id="productType">
+          <option id="economy" value="economy" selected>ECONOMY</option>
+          <option id="small" value="small">SMALL</option>
+          <option id="suv" value="suv">SUV</option>
+          <option id="premium" value="premium">PREMIUM</option>
+        </select>
+        <br>
+        <br>
+        <hr>
+        <span class="featureText">Features:</span>
+        <label for="rooftops" class="labelText"><span class="inputText">ROOFTOP (10$-)</span>
+          <input type="checkbox" id="rooftops" name="features[]" value="rooftop" class="cntn" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label for="ACs" class="labelText"><span class="inputText">AC(10$-)</span>
+          <input type="checkbox" id="ACs" name="features[]" value="Ac" class="cntn">
+          <span class="checkmark"></span>
+        </label>
+        <label for="airbag" class="labelText"><span class="inputText">AIRBAG(10$-)</span>
+          <input type="checkbox" id="airbag" name="features[]" value="airbag" class="cntn">
+          <span class="checkmark"></span>
+        </label>
+        <label for="seater" class="labelText"><span class="inputText">ATLEAST FOUR SEATER(10$-)</span>
+          <input type="checkbox" id="seater" name="features[]" value="seater" class="cntn">
+          <span class="checkmark"></span>
+        </label>
+        <br>
+        <label class="daysnumber">Select the Number of Days.</label>
+        <input type="text" name="daysno" id="daysno">
+
+        <br>
+        <label for="comment" class="comments">PLEASE MENTION ANY OTHER REQUIREMINT IF NECESSARY</label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Please enter here."></textarea>
+      </fieldset>
+
+      <input type="submit" value="Pay Now">
+      <input type="reset" value="Reset">
+    </div>
+
+  </form>
+
+  <footer>
+    <section class="foot">
+      <p>FOLLOW US ON</p>
+      <ol style="list-style-type:none">
+
+
+        <li class="social-icon fab fa-facebook-f"></li>
+        <li class="social-icon fab fa-twitter"></li>
+        <li class="social-icon fab fa-instagram"></li>
+        <li> &copy; Copyright </li>
+      </ol>
+    </section>
+  </footer>
+</body>
+
+</html>

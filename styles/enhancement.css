@@ -1,0 +1,107 @@
+body {
+ margin: 0;
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 800;
+
+}
+.container{
+ width: 80%;
+ margin: 0 auto;
+}
+
+header{
+ background: black;
+}
+
+
+header::after{
+ content: '';
+ display: table;
+ clear: both;
+}
+.logo{
+ float:left;
+ padding: 10px 0;
+ height: 100px;
+ width: 300px;
+ position: relative;
+ left: -60px;
+ top: -2px;
+}
+nav{
+ float: right;
+ position: sticky;
+ top:20px;
+ right:70px;
+ margin:0px;
+}
+
+nav ul {
+ margin:0;
+ padding:0;
+ list-style: none;
+}
+
+nav li{
+display: inline-block;
+margin-left: 70px;
+padding-top: 45px;
+position: relative;
+bottom: 50px;
+}
+
+nav a {
+ color: skyblue;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px;
+ font-family: 'Lato', sans-serif;
+ font-weight: bold;
+
+}
+
+nav a:hover{
+ color: skyblue;
+}
+nav a::before{
+ content: '';
+ display:block;
+ height: 5px;
+ background-color: black;
+ position: absolute;
+ top:0;
+ width: 0;
+/* transition: all ease-in-out 200ms;*/
+ }
+nav a:hover::before{
+ width: 100%;
+}
+
+h1{
+  text-align: center;
+  font-size: 100px;
+  padding-left:  40px;
+  margin: 40px;
+}
+.center{
+  padding: 40px;
+
+}
+footer{
+  border-top: 10px lightblue double;
+  clear: both;
+  background: black;
+}
+
+footer {
+  text-align: center;
+
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 98%;
+}
+.social-icon{
+  margin:20px 10px;
+}

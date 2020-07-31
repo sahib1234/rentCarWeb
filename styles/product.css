@@ -1,0 +1,411 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: black;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  height: 100px;
+  width: 300px;
+  position: relative;
+  left: -60px;
+  top: -2px;
+}
+
+nav {
+  float: right;
+  position: sticky;
+  top: 20px;
+  right: 70px;
+  margin: 0px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 45px;
+  position: relative;
+  bottom: 50px;
+}
+
+nav a {
+  color: skyblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: skyblue;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 0;
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.forimg {
+  background-image: url(images/wallpaperform.jpg);
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.regform {
+  width: 800px;
+  background-color: rgb(0, 0, 0, 0.6);
+  margin: auto;
+  color: #FFFFFF;
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: -30px;
+}
+
+.main {
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 800px;
+  margin: auto;
+}
+
+#name {
+  width: 100%;
+  height: 100px;
+}
+
+.name {
+  margin-left: 25px;
+  margin-top: -10px;
+  width: 125px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.firsstame {
+  position: relative;
+  left: 200px;
+  top: -50px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+}
+
+.lastname {
+  position: relative;
+  left: 417px;
+  top: -95px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+.firstlabel {
+  position: relative;
+  color: #E5E5E5;
+  text-transform: capitalize;
+  font-size: 14px;
+  left: 285px;
+  top: -45px;
+}
+
+.lastlabel {
+  position: relative;
+  color: #E5E5E5;
+  text-transform: capitalize;
+  font-size: 14px;
+  left: 330px;
+  top: -45px;
+}
+
+.company {
+  position: relative;
+  left: 200px;
+  top: -50px;
+  line-height: 40px;
+  width: 532px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+.email {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 480px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+.code {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 95px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+.number {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 255px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+.area_code {
+  position: relative;
+  color: #E5E5E5;
+  text-transform: capitalize;
+  font-size: 16px;
+  left: 54px;
+  top: -4px;
+}
+
+.phone-number {
+  position: relative;
+  color: #E5E5E5;
+  text-transform: capitalize;
+  font-size: 14px;
+  left: 100px;
+  top: -2px;
+}
+
+.option {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 532px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+  overflow: hidden;
+}
+
+.option option {
+  font-size: 20px;
+}
+
+#coustomer {
+  margin-left: 25px;
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.radio {
+  display: inline-block;
+  padding-right: 70px;
+  font-size: 25px;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: white;
+}
+
+.radio input {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+.reg1:hover {
+  background-color: #5390F5;
+}
+
+.reg2:hover {
+  background-color: #5390F5;
+}
+.reg2 {
+  position: relative;
+  left: 450px;
+  bottom: 63px;
+  font-size: 20px;
+  background-color: #3BAF9F;
+  display: block;
+  margin: 20px 0px 0px 20px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #366473;
+  padding: 14px 110px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25ms;
+  width: 90px;
+}
+
+.reg1 {
+  position: relative;
+  left: 50px;
+  font-size: 20px;
+  background-color: #3BAF9F;
+  display: block;
+  margin: 20px 0px 0px 20px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #366473;
+  padding: 14px 110px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25ms;
+  width: 75px;
+  top: 20px;
+}
+
+.hire {
+  color: black;
+  position: relative;
+  left: 600px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.hire2 {
+  color: skyblue;
+  position: relative;
+  left: 600px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.hire3 {
+  color: black;
+  position: relative;
+  left: 550px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.test1 {
+  background-color: skyblue;
+}
+
+.test2 {
+  background-color: black;
+}
+
+.test3 {
+  background-color: white;
+}
+
+.textContainer1 {
+  color: black;
+  width: 100%;
+  height: 280px;
+  padding: 20px;
+  margin: auto;
+  line-height: 1.7;
+  font-family: 'Comic Neue', cursive;
+}
+
+.textContainer2 {
+  color: skyblue;
+  width: 100%;
+  height: 280px;
+  padding: 20px;
+  margin: auto;
+  line-height: 1.7;
+  font-family: 'Comic Neue', cursive;
+}
+
+.textContainer3 {
+  color: black;
+  width: 100%;
+  height: 280px;
+  padding: 20px 20px 5px 5px;
+  margin: auto;
+  line-height: 1.7;
+  font-family: 'Comic Neue', cursive;
+}
+
+.side {
+  height: 200px;
+}
+
+.side2 {
+  height: 200px;
+}
+
+.side3 {
+  height: 200px;
+  margin: 10px;
+}
+
+footer {
+  border-top: 10px lightblue double;
+  clear: both;
+  background: black;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 99.7%;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}

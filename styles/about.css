@@ -1,0 +1,540 @@
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+
+figure{
+	display: inline;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: black;
+}
+
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.logo{
+  float:left;
+  padding: 10px 0;
+  height: 120px;
+  width: 300px;
+  position: relative;
+left: -60px;
+top: -2px;
+
+}
+nav{
+  float: right;
+  position: sticky;
+  top:20px;
+  right:70px;
+margin:0px;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+nav li{
+display: inline-block;
+margin-left: 70px;
+padding-top: 5px;
+position: relative;
+bottom: 50px;
+}
+
+nav a {
+  color: skyblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+
+}
+
+nav a:hover{
+  color: skyblue;
+}
+nav a::before{
+  content: '';
+  display:block;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top:0;
+  width: 0;
+  transition: all ease-in-out 200ms;
+  }
+nav a:hover::before{
+  width: 100%;
+}
+
+.me{
+  font-size: 40px;
+   position: relative;
+   text-align: center;
+
+}
+
+.lines{
+font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.aboutimg{
+height: 400px;
+width: 400px;
+float: right;
+border: 4px double;
+}
+h2{
+position: relative;
+  left: 40px;
+}
+h3{
+  position: relative;
+  left: 90px;
+}
+h4{
+  position: relative;
+  left: 140px;
+}
+h5{
+  position: relative;
+  left: 190px;
+}
+
+.bg{
+  background-image: url(images/aboutdisplay.jpg);
+  background-repeat: no-repeat;
+
+  height: 300px;
+width: 700px;
+}
+.a{
+background-color: #3BAF9F;
+display: block;
+margin: 20px 0px 0px 20px;
+text-align: center;
+border-radius: 20px;
+border: 2px solid #366473;
+padding: 14px 20px;
+outline: none;
+color: white;
+cursor: pointer;
+transition: 0.25ms;
+float: right;
+top:  100px;
+right: 250px;
+position: relative;
+}
+
+.b{
+background-color: #3BAF9F;
+display: block;
+margin: 20px 0px 0px 20px;
+text-align: center;
+border-radius: 20px;
+border: 2px solid #366473;
+padding: 14px 20px;
+outline: none;
+color: white;
+cursor: pointer;
+transition: 0.25ms;
+float: right;
+position: relative;
+top: 100px;
+left: 175px;
+}
+.c{
+background-color: #3BAF9F;
+display: block;
+margin: 20px 0px 0px 20px;
+text-align: center;
+border-radius: 20px;
+border: 2px solid #366473;
+padding: 14px 20px;
+outline: none;
+color: white;
+cursor: pointer;
+transition: 0.25ms;
+position: relative;
+float: right;
+left: 400px;
+top: 160px;
+}
+.d{
+background-color: #3BAF9F;
+display: block;
+margin: 20px 0px 0px 20px;
+text-align: center;
+border-radius: 20px;
+border: 2px solid #366473;
+padding: 14px 20px;
+outline: none;
+color: white;
+cursor: pointer;
+transition: 0.25ms;
+position: relative;
+float: right;
+left: 370px;
+top: 160px;
+
+}
+
+
+.para{
+  padding: 20px;
+
+ 
+display: inline;
+
+}
+
+
+
+
+table{
+	background: white;
+	width: 800px;
+	table-layout: fixed;
+	text-align: center;
+	margin-top: 50px;
+	font-family: Arial;
+	color: darkblue;
+	border: 1px dotted white;
+	border-collapse: collapse;
+	padding-left:  30px;
+	font-size: 20px;
+}
+ th, td{
+	border: 1px dotted skyblue;
+	border-collapse: collapse;
+	padding: 5px;
+
+}
+
+th{
+	background: #A5E1FF;
+	padding: 1px;
+	text-transform: uppercase;
+}
+
+  /*td:nth-child(5n+1){
+	background: red;
+}
+
+td:nth-child(5n+2){
+	background: green;
+}
+
+td:nth-child(5n+3){
+	background: black;
+}
+
+td:nth-child(5n+4){
+	background: orange;
+}
+
+td:nth-child(5n+5){
+	background: skyblue;
+}*/
+.edit{
+	height: 20px;
+}
+.thead1{
+	width: 60px;
+
+}
+.monlab{
+	background: #CCCC99;
+	font-size: 10px;
+}
+
+.monlec{
+	background: #FF99CC;
+	font-size: 10px;
+}
+.tuelec{
+	background: lightgray;
+		font-size: 10px;
+padding-top: 7px;
+}
+.wedlec{
+	background: #00CCCC;
+		font-size: 10px;
+		padding-top: 18px;
+		padding-bottom: 10px;
+}
+.wedtut{
+	background: #00CCCC;
+		font-size: 10px;
+}
+.wedlec2{
+	background: lightgray;
+		font-size: 10px;
+}
+.frilab{
+	background: #CCCC99;
+	font-size: 10px;
+}
+.friwork{
+	background: lightgray;
+font-size: 10px;
+}
+.friworkcontain{
+	position: relative;
+	background-color: lightgray;
+	font-size: 10px;
+	top: 10px;
+	padding: 5px;
+	height: 20px;
+	width: 147px;
+	right: 5px;
+}
+
+.pmhalfmon{
+	background: #FF99CC;
+	font-size: 10px;
+	position: relative;
+	bottom: 14px;
+	height: 10px;
+	padding: 5px;
+	width: 147px;
+	right: 0px;
+
+}
+.pmhalftue{
+	background: #FF99CC;
+	font-size: 10px;
+position: relative;
+bottom: 14px;
+height: 10px;
+padding: 5px;
+width: 147px;
+right: 0px;
+
+}
+.pmhalfwed{
+	background: #00CCCC;
+		font-size: 10px;
+position: relative;
+bottom: 14px;
+height: 10px;
+padding: 5px;
+width: 147px;
+right: 0px;
+
+}
+.pmhalfri{
+	background: lightgray;
+font-size: 10px;
+position: relative;
+bottom: 14px;
+height: 10px;
+padding: 5px;
+width: 147px;
+right: 0px;
+
+}
+.lab8monfri{
+	background: #CCCC99;
+	font-size: 10px;
+  position: relative;
+	top: 14px;
+	padding: 5px;
+	height: 20px;
+	width: 147px;
+	right: 0px;
+
+}
+
+.lab8mon{
+	background: #CCCC99;
+	font-size: 10px;
+	position: relative;
+	bottom: 14px;
+	height: 10px;
+	padding: 5px;
+	width: 147px;
+	right: 0px;
+
+}
+.lab8fri{
+	background: #CCCC99;
+	font-size: 10px;
+	position: relative;
+	bottom: 16px;
+	height: 10px;
+	padding: 5px;
+	width: 147px;
+	right: 0px;
+
+}
+.labwed6{
+	background: lightgray;
+		font-size: 10px;
+		position: relative;
+		top: 24px;
+		padding: 5px;
+		height: 20px;
+		width: 147px;
+		right: 0px;
+
+}
+.labwed8 {
+	background: lightgray;
+		font-size: 10px;
+		position: relative;
+		top: 24px;
+
+		height: 20px;
+		width: 147px;
+		right: 0px;
+}
+.tue12half{
+	background: lightgray;
+		font-size: 10px;
+		position: relative;
+	 top: 14px;
+	 padding: 5px;
+	 height: 20px;
+	 width: 147px;
+	 right: 0px;
+
+}
+.wed12half{
+	background: #00CCCC;
+		font-size: 10px;
+		position: relative;
+ 	 top: 14px;
+ 	 padding: 5px;
+
+ 	 height: 10px;
+ 	 width: 147px;
+ 	 right: 0px;
+
+
+}
+.monlechalf{
+	background: #FF99CC;
+	font-size: 10px;
+  position: relative;
+	top: 14px;
+	padding: 5px;
+	height: 20px;
+	width: 147px;
+	right: 0px;
+
+}
+.tuepg{
+	background: lightgray;
+	font-size: 10px;
+position: relative;
+bottom: 14px;
+height: 10px;
+padding: 5px;
+width: 147px;
+right: 0px;
+
+}
+.wedpg{
+	background: #00CCCC;
+	font-size: 10px;
+	position: relative;
+	bottom: 13px;
+	height: 10px;
+	padding: 0px;
+	width: 147px;
+	right: 0px;
+
+
+}
+.monlecadjust{
+	background: #FF99CC;
+	font-size: 10px;
+	bottom: 12px;
+	height: 10px;
+	padding: 5px;
+	width: 147px;
+	right: 0px;
+
+}
+.wedtutadjust{
+	background: #00CCCC;
+	font-size: 10px;
+	top: 18px;
+	height: 10px;
+	padding: 0px;
+	width: 147px;
+	right: 0px;
+
+}
+
+h6{
+	width: 100%;
+	font-size: 20px;
+}
+
+
+.mybg{
+	background-image: url(images/mybgabout.jpg);
+	color: black;
+	padding: 20px;
+	height: 400PX;
+	padding-top: 40px;
+	width: 97%;
+
+
+}
+
+.credits{
+	background-image: url(images/creditsbg.png);
+	color: white;
+	padding: 20px;
+	height: 400PX;
+   width: 97%;
+
+}
+
+
+h6{
+	display: inline;
+}
+
+footer{
+  border-top: 10px lightblue double;
+  clear: both;
+	background: black;
+}
+
+footer {
+  text-align: center;
+
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 97%;
+}
+.social-icon{
+  margin:20px 10px;
+  position: relative;
+  left: 30px;
+
+
+}

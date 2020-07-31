@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=id , initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/payment.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script src="scripts/enhancements.js"></script>
+  <script src="scripts/payment.js"></script>
+<!--for icons in footer -->
+  <script
+  src="https://kit.fontawesome.com/09e0f9fcdf.js"
+  crossorigin="anonymous"
+></script>
+
+</head>
+
+<body id="enqform">
+  <header>
+    <div class="containernav">
+      <img class="logo" src="images/navlogo.svg" alt="car logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="product.html">PRODUCT</a></li>
+          <li><a href="enquire.html">ENQUIRY</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="enhancement.html">ENHANCEMENTS</a></li>
+              <li><a href="enhancements2.html">Enhancements2</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="enqsForm">
+
+    <div class="details">
+      <h2>PAYMENT DETAIS</h2>
+      <hr class="line">
+      <hr class="line">
+      <h1>Your personal details :</h1>
+      <hr class="line">
+      <h1>First Name:</h1>
+      <p> <span id="firstName"></span></p>
+      <input name="firstName" type="hidden" id="firstNamevalue">
+      <hr>
+      <h1>Last Name:</h1>
+      <p> <span id="lastName"></span></p>
+      <input type="hidden" id="lastNamevalue" name="lastName">
+      <hr>
+
+      <h1>Emailaddress:</h1>
+      <p> <span id="email_name"></span></p>
+      <input type="hidden" id="email_namevalue" name="email_name">
+      <hr class="line">
+      <h1>Your address :</h1>
+      <hr class="line">
+      <h1>Street Address:</h1>
+      <p> <span id="streetAddress"></span></p>
+      <input type="hidden" id="streetAddressvalue" name="streetAddress">
+      <hr>
+
+      <h1>Suburb:</h1>
+      <p> <span id="suburbTown"></span></p>
+      <input type="hidden" id="suburbvalue" name="Suburb">
+      <hr>
+
+      <h1>State:</h1>
+      <p> <span id="state"></span></p>
+      <input type="hidden" id="statevalue" name="State">
+      <hr>
+
+      <h1>Postcode: </h1>
+      <p><span id="postcode"></span></p>
+      <input type="hidden" id="postcodevalue" name="postcode">
+      <hr>
+
+
+      <h1>Phone number: </h1>
+      <p><span id="phoneNumber"></span></p>
+      <input type="hidden" id="phoneNumbervalue" name="phoneNumber">
+      <hr>
+
+      <h1>Prefered Contact: </h1>
+      <p><span id="email"></span><br>
+        <span id="post"></span><br>
+        <span id="phone"></span><br>
+      </p>
+      <input type="hidden" id="radiodisplay" name="preferedContact">
+      <hr class="line">
+
+      <h1>Your order details :</h1>
+      <hr class="line">
+      <h1>Selected Car:</h1>
+      <p><span id="economy"></span> <span id="small"></span></p>
+      <p><span id="suv"></span>
+        <span id="premium"></span></p>
+      <input type="hidden" id="selectcarvalue" name="Yourcar">
+      <hr>
+
+
+      <h1>Features Selected:</h1>
+
+      <p>
+        <span id="rooftops"></span><br>
+        <span id="ACs"></span><br>
+        <span id="airbag"></span><br>
+        <span id="seater"></span><br>
+        <br>
+      </p>
+      <input type="hidden" id="featuresvalue" name="Features">
+      <hr>
+
+      <h1>Total price of Car and added Features:</h1>
+      <p><span id="total"></span></p>
+      <input type="hidden" id="totalvalue" name="Total">
+      <hr>
+
+      <h1>Number Of Days:</h1>
+      <p> <span id="daysno"></span></p>
+      <input type="hidden" id="daysnovalue" name="daysno">
+      <hr>
+
+      <h1>Comments:</h1>
+      <p> <span id="comment"></span></p>
+      <input type="hidden" id="commentvalue" name="comment">
+      <hr class="line">
+      <hr class="line">
+    </div>
+
+<!--credit card -->
+    <div id="paymentbg">
+      <fieldset class="payment">
+        
+        <div class="panel panel-default credit-card-box">
+          <div class="panel-heading display-table">
+            <div class="row display-tr">
+              <h3 id="h3color" class="panel-title display-td">Payment Details</h3>
+              <br>
+              <img class="imgpayment" src="http://i76.imgup.net/accepted_c22e0.png" alt="creditsphoto">
+            </div>
+          </div>
+        </div>
+
+
+        <br>
+        <label id="labelcolor" class="credit" for="credit">Credit Card Type:</label>
+        <br>
+        <select name="creditcard" id="credit">
+          <option disabled selected value>Select an option</option>
+          <option value="Visa">VISA</option>
+          <option value="Mastercard">MASTERCARD</option>
+          <option value="American">AMERICAN EXPRESS</option>
+
+        </select>
+        <br>
+        <br>
+        <label class="labelcolor">Name</label>
+        <input type="text" id="ownername" name="OwnerName" placeholder="Owner Name"  pattern="^[a-zA-z ]{2,40}$"/>
+        <br>
+        <label class="labelcolor">CARD NUMBER</label>
+        <input type="text" id="cardnum" name="cardNumber" placeholder="Valid Card Number" />
+        <span class="input-group-addon"></span>
+        <br>
+        <label class="labelcolor">EXPIRATION DATE</label>
+        <br>
+        <br>
+        <select name="EXpirymonth" id="expmon">
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+          <option value="6">06</option>
+          <option value="7">07</option>
+          <option value="8">08</option>
+          <option value="9">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+
+        </select>
+        <br>
+        <label class="labelcolor"> Month</label>
+
+        <div class="years">
+          <select name="ExpiryYear" id="year">
+            <option value="2021">21</option>
+            <option value="2022">22</option>
+            <option value="2023">23</option>
+            <option value="2024">24</option>
+            <option value="2025">25</option>
+
+          </select>
+
+          <br>
+
+          <label class="labelcolor"> Year</label>
+        </div>
+
+        <label class="labelcolor">CV CODE</label>
+        <input type="text" id="cvv" name="cvv card" placeholder="CVC"  pattern="^[0-9]{3}$"/>
+
+        <br>
+<br>
+
+        
+        <button class="blueButton" id="checkout" type="submit">Checkout</button>
+        
+        <a href="index.html"  id="cancel" class="blueButton">Cancel</a>
+        <br><br>
+
+
+      </fieldset>
+    </div>
+  </form>
+
+  <footer>
+    <section class="foot">
+      <p>FOLLOW US ON</p>
+      <ol style="list-style-type:none">
+
+
+        <li class="social-icon fab fa-facebook-f"></li>
+        <li class="social-icon fab fa-twitter"></li>
+        <li class="social-icon fab fa-instagram"></li>
+        <li> &copy; Copyright </li>
+      </ol>
+    </section>
+  </footer>
+
+
+</body>
+
+</html>

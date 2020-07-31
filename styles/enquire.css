@@ -1,0 +1,336 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: black;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  float:left;
+  padding: 10px 0;
+  height: 100px;
+  width: 250px;
+  position: relative;
+left: 20px;
+top: 2px;
+
+}
+
+nav{
+  float: right;
+  position: sticky;
+  top:20px;
+  right:70px;
+margin:0px;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+nav li{
+display: inline-block;
+margin-left: 70px;
+padding-top: 55px;
+position: relative;
+}
+
+nav a {
+  color: skyblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+
+}
+
+nav a:hover{
+  color: skyblue;
+}
+nav a::before{
+  content: '';
+  display:block;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top:0;
+  width: 0;
+  transition: all ease-in-out 200ms;
+  }
+nav a:hover::before{
+  width: 100%;
+}
+
+
+  .enquires{
+    padding: 10px 20px;
+    background-color: rgb(0,0,0,0.9);
+    margin: 1px auto;
+    border-radius: 4px;
+
+  }
+
+  .enquires fieldset{
+    border: none;
+
+  }
+  .enquires legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  .enquires label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 20px;
+  }
+
+  .enquires .no {
+
+    border: 10px lightblue double;
+    background: black;
+    height: 20px;
+    width: 25px;
+
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 0px #660000;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-top: 10px;
+
+  }
+
+
+	 .num{
+		position: relative;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		left: 5px;
+
+
+
+
+
+	}
+	.emails{
+
+		width: 310px;
+		height: 25px;
+			margin-bottom: 20px;
+				margin-top: 10px;
+	}
+  input[type=text], input[type=emailAddress]{
+    width: 20%;
+    height: 8px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #D3D3D3;
+    margin: 10px 0px 10px 0px ;
+    border-radius: 4px;
+  }
+  .productTypes{
+    font-size: 1.2em;
+
+  }
+  
+  .featureText{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .containers {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+  .containers input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+  .complete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 20%;
+  }
+
+
+  .containers:hover input ~ .complete {
+    background-color: skyblue;
+  }
+
+
+  .containers input:checked ~ .complete {
+    background-color: black;
+  }
+
+
+  .complete:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+
+  .containers input:checked ~ .complete:after {
+    display: block;
+  }
+
+
+  .containers .complete:after {
+     top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+	.firstName{
+	  color: white;
+	}
+	.lastname{
+	  color: white;
+	}
+	.email{
+	  color: white;
+	}
+	.street{
+	  color: white;
+	}
+	.suburb{
+	  color: white;
+	}
+  .comments{
+border-top: 10px lightblue double;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  input[type=button], input[type=submit], input[type=reset]{
+    text-decoration: none;
+    background-color: skyblue;
+    color: black;
+margin: 30px;
+    border-radius: 10%;
+    display: inline-block;
+    border: none;
+    padding: 15px 42px;
+    text-align: center;
+font-size: 20px;
+  }
+  footer{
+    border-top: 10px lightblue double;
+    clear: both;
+  	background: black;
+  }
+
+  footer {
+    text-align: center;
+font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 97.3%;
+  }
+
+  .social-icon{
+    margin:20px 10px;
+  }
+
+  .test1{
+    font-family: "Montserrat-bold",sans-serif;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: 59px;
+    text-align: center;
+    font-weight: 600;
+  }
+legend{
+  color: white;
+  border-top: 10px  lightblue double;
+width: 100%
+
+
+}
+.state{
+  color: white;
+}
+.post{
+  color: white;
+}
+.phone{
+  color: white;
+}
+.prefer{
+  color: white;
+}
+.productTypes{
+  color: white;
+}
+.labelText{
+  color: white;
+}
+.featureText{
+  color: white;
+}
+.num{
+	color: white;
+
+}
+.daysnumber{
+  color: white;
+}
+.cntn{
+  left: 400px;
+}
+li, h4{
+  color: #fff;
+}
+.billing{
+  font-size: 20px;
+  color: #fff;
+}
+#horizontal{
+  border-top: 10px lightblue double;
+  clear: both;
+  background: black;
+}
+#checkboxhide{
+  display: none;
+}
+label{
+  color: #fff;
+}
